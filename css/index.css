@@ -60,6 +60,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
 .navigation {
     list-style: none;
     margin: 0;
@@ -87,3 +88,60 @@ footer a:hover {
     border-radius: 5px;
 }
 
+/* 追加: レスポンシブ対応 */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    main {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .example, .experience {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    .experience-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* さらに小さい画面用 */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .button {
+        font-size: 1em;
+    }
+}
